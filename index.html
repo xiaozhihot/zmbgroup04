@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>智选学园</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        font-size: 2em;
+        padding: 20px 0;
+        color: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+        width: calc(100% - 40px); /* Reduced padding */
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .container:-webkit-scrollbar {
+        display: none; /* Chrome, Safari, and Edge */
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 15px;
+        width: 70px;
+        height: 50px;
+        padding: 2px; /* Reduced padding */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5px;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: scale(1.1);
+    }
+
+    .card .gradient-bar {
+        width: 100%;
+        height: 20px; /* Reduced height */
+        border-radius: 0 0 16px 16px;
+        background: linear-gradient(135deg, #ff9800, #e65100);
+    }
+
+    .card:nth-child(2) .gradient-bar {
+        background: linear-gradient(135deg, #4caf50, #388e3c);
+    }
+
+    .card:nth-child(3) .gradient-bar {
+        background: linear-gradient(135deg, #2196f3, #1976d2);
+    }
+
+    .card:nth-child(4) .gradient-bar {
+        background: linear-gradient(135deg, #f44336, #d32f2f);
+    }
+
+    .card:last-child .gradient-bar {
+        background: linear-gradient(135deg, #673ab7, #512da8);
+    }
+
+    .card h5 {
+        font-size: 8px;
+        margin: 2px 0; /* Reduced margin */
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .card a {
+        color: #333;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Adjustments for larger screens */
+    @media (min-width: 768px) {
+        .card {
+            width: 80px;
+            height: 80px;
+        }
+
+        .card h5 {
+            font-size: 10px;
+        }
+
+        .card .gradient-bar {
+          border-radius: 0 0 24px 24px
+            height: 24px;
+        }
+    }
+
+    /* Adjustments for even wider screens */
+    @media (min-width: 1024px) {
+        .card {
+            width: 100px;
+            height: 100px;
+        }
+
+        .card h5 {
+            font-size: 12px;
+        }
+
+        .card .gradient-bar {
+            height: 28px;
+            border-radius: 0 0 28px 28px
+        }
+    }
+</style>
+</head>
+<body>
+<h1>智选学园</h1>
+
+<div class="container">
+    <div class="card">
+        <a href="https://sharechain.qq.com/6d9054f6c04deb9f1fecae53e1055db6">
+            <h5>作业</h5>
+            <div class="gradient-bar"></div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="https://xiaozhihot.github.io/bogroup-public/">
+            <h5>作品展示</h5>
+            <div class="gradient-bar"></div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="https://h5.beisu666.com/aidiandu/index/select-unit.html?bid=45688&title_bar_name=%E4%B8%83%E5%B9%B4%E7%BA%A7%E4%B8%8B&isAdd=1&subject=%E8%8B%B1">
+            <h5>英语朗读</h5>
+            <div class="gradient-bar"></div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="https://h5.beisu666.com/aidiandu/index/select-unit.html?bid=45683&title_bar_name=%E4%B8%83%E5%B9%B4%E7%BA%A7%E4%B8%8B&isAdd=0&subject=%E8%AF%AD">
+            <h5>语文朗读</h5>
+            <div class="gradient-bar"></div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="more.html">
+            <h5>更多</h5>
+            <div class="gradient-bar"></div>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
